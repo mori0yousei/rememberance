@@ -1,0 +1,33 @@
+<div class="form">
+  <form name="form" action="form.php">
+    <div>
+      <label for="name">名前（匿名可能）</label>
+      <br>
+      <input type="text" id="name" name="name" placeholder="名前（敬称可）" required>
+    </div>
+    <div>
+      <label for="email">メールアドレス</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="記入任意">
+    </div>
+    <div>
+      <label for="message">案件</label>
+      <br>
+      <textarea id="message" name="message" placeholder="このポータルサイトに伝えたい事柄を記入してください。" row="5" required></textarea>
+    </div>
+    <div class="dropdownlit">
+      <select id="select" name="select" required>
+        <option>一つ選択</option>				
+        <option>このポータルの感想</option>
+        <option>取り上げて欲しいこと</option>
+        <option>自分もこの企画に参加する</option>
+        <option>苦情や改善点</option>
+      </select>
+    </div>
+    <div class="bottom">
+      <button type="submit" class="submit">送信する</button>
+      <button type="reset" class="reset">全てを抹消する</button>
+      <br>
+    </div>
+  </form>
+</div>

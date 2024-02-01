@@ -1,0 +1,204 @@
+body {
+  background-color:#3b4e3c;
+}
+
+.mainHead {
+    color: #7bf4d6;
+    font-family: "Reggae One";
+    font-weight: bold;
+    font-size: 60px;
+}
+.mainDesk {
+    color: #14b89c;
+    font-family: "Yuji Mai";
+    font-weight: bold;
+    font-size: 40px;
+}
+.mainDesk2 {
+    color: #7175ea;
+    font-family: "Kaisei Opti";
+    font-weight: bold;
+    font-size: 30px;
+}
+.mainDesk3 {
+    color: #bce1bd;
+    font-family: "Kiwi Maru";
+    /* font-weight: bold; */
+    font-size: 36px;
+}
+.mainCont {
+    color: #f3b6fb;
+    font-family: "Kaisei Opti";
+    font-weight: bold;
+    font-size: 36px;
+}
+.mainSub {
+    color: #eac066;
+    font-family: "Zen Kurenaido";
+    font-weight: bold;
+    font-size: 32px;
+}
+.mainFile {
+    color: #e5adf5;
+    font-family: "Kaisei Decol";
+    font-weight: bold;
+    font-size: 30px;
+}
+.temp {
+    color: #fb3737;
+    font-family: "Klee One";
+    font-weight: bold;
+    font-size: 250px;
+}
+.end {
+    color: #f782b1;
+    font-family: "Yusei Magic";
+    font-weight: bold;
+    font-size: 34px;
+}
+
+a {
+  padding-left:200px;
+}
+
+.addInfo {
+  color: #f2c218;
+  font-family: "Kaisei Opti";
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.form01 {
+  color: #24b5e5;
+  font-family: "Yomogi";
+  /* font-weight: bold; */
+  font-size: 28px;
+}
+
+.submit {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+/* button animate */
+.reset {
+  color: #601901;
+  font-family: "Kiwi Maru";
+  font-size: 18px;
+  
+  position: relative;
+  background-color: #ff7142;
+  border: none;
+  padding: 7.5px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.reset:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 200%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.reset:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+/* button animate */
+/* submit ani */
+.submit {
+  color: #87c090;
+  font-family: "Kiwi Maru";
+  font-size: 18px;
+  border: 10px solid #c2e5d8;
+
+  position: relative;
+  background-color: #012804;
+  border: none;
+  padding: 7.5px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.submit:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 200%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.submit:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+/* submit ani end */
+
+
+form {
+  color: #24b5e5;
+  font-family: "Zen Antique Soft";
+  font-size: 21px;
+}
+
+input {
+  color: #161485;
+  font-family: "Klee One";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+option {
+  color: #022f5a;
+  font-family: "Hina Mincho";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+textarea {
+  color: #e6902d;
+  font-family: "Zen Kurenaido";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* glow 4 select */
+select {
+  color: #e6902d;
+  font-family: "Zen Kurenaido";
+  font-size: 26px;
+  font-weight: bold;
+  animation: glow 1s ease-in-out infinite alternate;
+  background: #0a0b10aa;
+}
+@-webkit-keyframes glow {
+from {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+/* glowed. */
