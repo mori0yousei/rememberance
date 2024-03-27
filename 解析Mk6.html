@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>解析Mk6</title>
+	<style>
+	body{ font-size:16pt; font-weight:bold; }
+	h1 { color:white;padding:5px; font-size:24pt;
+		background-color:red; }
+	</style>
+	<script>
+		var DakufuList =  [
+			"1",
+			"2",
+			"3",
+			"4",
+			"5",
+			"6",
+			"7",
+			"8",
+			"9",
+			"0",
+			"@",
+			"#",
+			"¥",
+			"-",
+			"*",
+			"(",
+			")",
+			"「",
+			"」",
+			//"^_^",
+			"%",
+			"~",
+			"…",
+			"/",
+			";",
+			":"
+		];
+
+		var CharList = [
+			"q",
+			"w",
+			"e",
+			"r",
+			"t",
+			"y",
+			"u",
+			"i",
+			"o",
+			"p",
+			"a",
+			"s",
+			"d",
+			"f",
+			"g",
+			"h",
+			"j",
+			"k",
+			"l",
+			//"z",
+			"x",
+			"c",
+			"v",
+			"b",
+			"n",
+			"m"
+		];
+
+		function Convert()
+		{
+			var text = document.querySelector("#Ken_area").value;
+			var result = "";
+			var temp = "";
+			for (var i = 0; i < text.length; i++)
+			{
+				if (text.slice(i, i + 3) == "^_^")
+				{
+					result += "z";
+					i += 2;
+				}
+				else
+				{
+					temp = DakufuList.indexOf(text.slice(i, i + 1));
+					if (temp !== -1)
+					{
+						result += CharList[temp];
+					}
+					else
+					{
+						result += text.slice(i, i + 1);
+					}
+				}
+			}
+			document.querySelector("#Ken_result").value = result;
+		}
+
+		function FukudaConvert()
+		{
+			var text = document.querySelector("#Ken_area").value;
+			var result = "";
+			var temp = "";
+			for (var i = 0; i < text.length; i++)
+			{
+				if (text.slice(i, i + 1) == "z")
+				{
+					result += "^_^";
+				}
+				else
+				{
+					temp = CharList.indexOf(text.slice(i, i + 1));
+					if (temp !== -1)
+					{
+						result += DakufuList[temp];
+					}
+					else
+					{
+						result += text.slice(i, i + 1);
+					}
+				}
+			}
+			document.querySelector("#Ken_result").value = result;
+		}
+	</script>
+</haed>
+
+<body>
+
+	<textarea id="Ken_area" placeholder="文字列を入力..."></textarea>
+	<br>
+	<button onclick="Convert();">日本語訳</button>,<button onclick="FukudaConvert();">フクダ語訳</button>
+	<br>
+	<textarea id="Ken_result" placeholder="result"></textarea>
+	<p>上を下に翻訳します</p>
+
+</body>
+
+</html>
